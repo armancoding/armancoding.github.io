@@ -3,10 +3,11 @@ body{
     background-color:rgb(21, 21, 21);
     color: rgb(221, 221, 221);
     font-family: Bahnschrift condensed;
-    /* background-image: url("mech.jpg");
+    background-image: url("https://spaceflight101.com/spx/wp-content/uploads/sites/113/2016/09/29916104756_83da3b3e8e_o.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: center; */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 a:link
@@ -21,14 +22,21 @@ a:hover
 {
     color:rgb(168, 98, 60)
 }
+h1
+{
+    color: rgb(223, 134, 86);
+}
 h3
 {
-    color: rgb(168, 98, 60);
+    color: rgb(194, 113, 69);
 }
 hr
 {
     border-color:rgb(144, 85, 53);
+    width: 70%;
+    border-style: solid;
 }
+
 
 
 
@@ -45,6 +53,11 @@ button{
 
 }
 
+button:hover
+{
+    background: rgb(168, 98, 60);
+}
+
 input
 {
     border: none;
@@ -53,7 +66,7 @@ input
     margin: 2px;
     cursor:pointer;
     background-color: rgb(36, 36, 36);
-    color: rgb(221, 221, 221);
+    color: #ddddddff;
     font-family: Bahnschrift condensed;
     min-width: 100px;
 }
@@ -63,16 +76,48 @@ input:hover
     background: rgb(168, 98, 60);
 }
 
-button:hover
-{
-    background: rgb(168, 98, 60);
-}
-
 #carCanvas{
     background: #363636ff;
+    width: 100%;
 
 }
 #networkCanvas{
     background: #212121ff;
-
+    width: 100%;
 }
+
+#collapsableButton
+{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea
+{
+    background-color: #212121ff;
+    color: #ddddddff;
+    border-radius: 5px;
+    border-color: #363636ff;
+}
+
+textarea:hover
+{
+    border-color:rgb(168, 98, 60);
+}
+
+::selection
+{
+    background: rgb(168, 98, 60);
+}
+
+::-moz-selection
+{
+    background: rgb(168, 98, 60);
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+    background-color:rgba(25, 25, 25, 0.95);
+    padding: 2%;
+  }
