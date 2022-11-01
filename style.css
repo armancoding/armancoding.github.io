@@ -37,8 +37,11 @@ hr
     border-style: solid;
 }
 
-
-
+table
+{
+    max-height: fit-content;
+    max-width: fit-content;
+}
 
 button{
    border: none;
@@ -115,9 +118,40 @@ textarea:hover
     background: rgb(168, 98, 60);
 }
 
-.center {
+.center
+{
     margin: auto;
     width: 80%;
     background-color:rgba(25, 25, 25, 0.95);
     padding: 2%;
-  }
+}
+
+.collapsible
+{
+  width: 100%;
+  text-align: center;
+}
+.stars
+{
+  color:rgb(223, 134, 86)
+}
+
+img.avatar
+{
+    height: 200px; 
+    width: 200px;
+    border-radius: 100px;
+}
+
+@media (max-width: 400px) {
+    td 
+    { 
+        float:none; 
+        display:block; 
+    } 
+
+    th
+    {
+        display:block
+    }
+    }

@@ -12,8 +12,7 @@
     <table cellspacing="20">
         <tr>
             <td>    
-                <img src="mech.jpg" alt="MECHANICAL ENGINEERING" style="height: 200px; width: 200px;
-                border-radius: 100px;" >
+                <img src="mech.jpg" alt="MECHANICAL ENGINEERING" class="avatar" >
             </td>
             <td>
                 <h1>Arman Amirkhanyan</h1>
@@ -63,7 +62,7 @@
     </table>
     <hr>
     <table cellspacing="20">
-        <tbody style="background-color: rgb(31, 31, 31); border-radius: 20px;">
+        <tbody style="background-color: rgb(31, 31, 31);">
             <tr> <h3>Skills</h3></tr>
             <tr>
                 <td>
@@ -75,8 +74,8 @@
                             </tr>
                         </thead>
                         <tr>
-                            <td>C++ low level programming</td>
-                            <td style="color: rgb(168, 98, 60);">★★★✰✰</td>
+                            <td>C++ low level</td>
+                            <td class="stars">★★★✰✰</td>
                         </tr>
                     </table>
                 </td>
@@ -89,8 +88,8 @@
                             </tr>
                         </thead>
                         <tr>
-                            <td>C++ low level programming</td>
-                            <td style="color: rgb(168, 98, 60);">★★★✰✰</td>
+                            <td>C++ low level</td>
+                            <td class="stars">★★★✰✰</td>
                         </tr>
                     </table>
                 </td>
@@ -98,7 +97,7 @@
         </tbody>
     </table>
     <hr>
-    <button id="collapsableButton" class="collapsible">Contact</button>
+    <button class="collapsible" text-align="center">Contact</button>
     <div>
         <h1>My Contact Details</h1>
         <p>+1(347)768-3104</p>
@@ -114,41 +113,41 @@
         </form>
     </div>
     <hr>
-    <button id="collapsableButton" class="collapsible">Self Driving Car ML Demo</button>
+    <button class="collapsible">Self Driving Car ML Demo</button>
     <div class="content">
         <table class="center">
             <tr>
                 <td><canvas id  ="carCanvas"> </canvas></td>
                 <td><canvas id  ="networkCanvas"></canvas></td>
-            </tr>
-            <tr>
-                <div id="verticalButtons">
-                    <form action="https://armancoding.github.io/SelfDrivingCar/">
-                        <input type="submit" value="Full Version" >
-                    </form>
-                    <button onclick="save()">Save</button>
-                    <button onclick="discard()">Delete</button>
-                    <button onclick="savedbrain()">Working Model</button>
-
-            </tr>
-        </table>
-        </div>
-        <script src ="savedBrain.json">     </script>
-        <script src ="visualizer.js">       </script>
-        <script src ="network.js">          </script>
-        <script src ="sensor.js">           </script>
-        <script src ="utils.js">            </script>
-        <script src ="road.js">             </script>
-        <script src ="controls.js">         </script>
-        <script src ="car.js">              </script>
-        <script src ="main.js"></script>
+                    <script src ="savedBrain.json">     </script>
+                    <script src ="visualizer.js">       </script>
+                    <script src ="network.js">          </script>
+                    <script src ="sensor.js">           </script>
+                    <script src ="utils.js">            </script>
+                    <script src ="road.js">             </script>
+                    <script src ="controls.js">         </script>
+                    <script src ="car.js">              </script>
+                    <script src ="main.js">             </script>
+                </tr>
+                <tr>
+                    <div id="verticalButtons">
+                        <form action="https://armancoding.github.io/SelfDrivingCar/">
+                            <input type="submit" value="Full Version" >
+                        </form>
+                        <button onclick="save()">Save</button>
+                        <button onclick="discard()">Delete</button>
+                        <button onclick="savedbrain()">Working Model</button>
+                    </div>
+                </tr>
+            </table>
     </div>
+
+
 </div>
+
 <script>
 let coll = document.getElementsByClassName("collapsible");
-let i;
-
-for (i = 0; i < coll.length; i++) {
+for (let i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     let content = this.nextElementSibling;
