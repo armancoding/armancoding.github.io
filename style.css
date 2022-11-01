@@ -1,0 +1,78 @@
+body{
+    margin:0;
+    background-color:rgb(21, 21, 21);
+    color: rgb(221, 221, 221);
+    font-family: Bahnschrift condensed;
+    /* background-image: url("mech.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center; */
+}
+
+a:link
+{
+    color:rgb(144, 85, 53);
+}
+a:visited
+{
+    color:rgba(144, 85, 53, 0.699);
+}
+a:hover
+{
+    color:rgb(168, 98, 60)
+}
+h3
+{
+    color: rgb(168, 98, 60);
+}
+hr
+{
+    border-color:rgb(144, 85, 53);
+}
+
+
+
+button{
+   border: none;
+   border-radius: 5px; 
+   padding: 5px 5px 7px 5px;
+   margin: 2px;
+   cursor:pointer;
+   background-color: rgb(36, 36, 36);
+   color: rgb(221, 221, 221);
+   font-family: Bahnschrift condensed;
+   min-width: 100px;
+
+}
+
+input
+{
+    border: none;
+    border-radius: 5px; 
+    padding: 5px 5px 7px 5px;
+    margin: 2px;
+    cursor:pointer;
+    background-color: rgb(36, 36, 36);
+    color: rgb(221, 221, 221);
+    font-family: Bahnschrift condensed;
+    min-width: 100px;
+}
+
+input:hover
+{
+    background: rgb(168, 98, 60);
+}
+
+button:hover
+{
+    background: rgb(168, 98, 60);
+}
+
+#carCanvas{
+    background: #363636ff;
+
+}
+#networkCanvas{
+    background: #212121ff;
+
+}

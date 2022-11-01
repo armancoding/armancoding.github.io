@@ -1,49 +1,151 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Arman's Portfolio</title>
+    <title>Arman's Portfolio Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    h1 {
-    color: beige;
-    text-shadow: 2px 2px 4px #000000;
-    }
-    h2 {
-    color:rgb(218, 192, 192);
-    text-shadow: 2px 2px 4px #6e0808;
-    
-    }
-    a{
-        color:salmon
-    }
-</style>
 <body>
-    <!-- <script src="main.js"></script> -->
-    <style>
-        body {
-          background-image: url("witcher.jpg");
-          background-position-y: top;
-          background-position-x: center;
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: cover;
-        }
-        </style>
-     <h1>Arman's Portfolio</h1>
-     <h2>For more information on the MIT xPRO course click <a href="https://executive-ed.xpro.mit.edu/professional-certificate-coding?utm_source=Google&utm_medium=c&utm_term=%2Bmit%20%2Bfull%20%2Bstack&utm_location=9004359&utm_campaign=B-365D_US_GG_SE_PCC_Brand&utm_content=MIT-Full-Stack___Course_OnlineSchool_12Nov&gclid=Cj0KCQjw0K-HBhDDARIsAFJ6UGhIBUuxyIgDSwe4vYKNf9dAEZRBN2ydU9GpFQYRQSNJl-vTk0OKWZYaAsrAEALw_wcB">here</a></h2>
+    <style> 
+    </style>
+    <table cellspacing="20">
+        <tr>
+            <td>    
+                <img src="mech.jpg" alt="MECHANICAL ENGINEERING" style="height: 200px; width: 200px;
+                border-radius: 100px;" >
+            </td>
+            <td>
+                <h1>Arman Amirkhanyan</h1>
+                <p>Mechanical Engineer</p>
+                <p>Software Enthusiast</p>
+            </td>
+        </tr>
+    </table>
 
-<div id="Container"
-style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
-<iframe id="ViostreamIframe" width="80%" height="80%" 
-src="https://www.youtube.com/embed/T6eE4wbPNXU" frameborder="0" allowfullscreen=""
-style="position:absolute; top:0; left: 0"></iframe>
-</div>
-    <!-- </iframe>
-    <iframe 
-    src="https://www.youtube.com/embed/T6eE4wbPNXU">
-    </iframe> -->
 
+    <hr>
+    <h3> Education and Interests</h3>
+    <ul>
+        <li><b>Mechanical Engineer</b>, specializing in <i><b>Manufacturing</b></i> and <i><b>Integration</b></i>
+            <ul><li><a href="https://www.citytech.cuny.edu"><i>New York City College of Technology CUM LAUDE (2017-2020)</i></a> </li></ul>
+        </li>
+        <li>Enthusiastic Game Developer, believing that game engines are powerful tools, capable of much more than just entertainment</li>
+    </ul>
+    <h3> Work Experience </h3>
+    <table cellspacing="10" style="background-color: rgb(31, 31, 31);">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Company</th>
+                <th>Dates</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Manufacturing/Industrial Design Engineer</td>
+            <td>AFC Industries</td>
+            <td>Feb 2020 - Dec 2020</td>
+        </tr>
+        <tr>
+            <td>Repair Technician </td>
+            <td>Street Talk</td>
+            <td>Nov 2014 - Mar 2016</td>
+        </tr>
+        <tr>
+            <td>Senior Technician </td>
+            <td>Street Talk</td>
+            <td>Mar 2016 - Present</td>
+        </tr>
+        <tr>
+            <td>Location Operations Manager</td>
+            <td>3D Innovations</td>
+            <td>Mar 2019 - Mar 2020</td>
+        </tr>
+    </table>
+    <hr>
+    <table cellspacing="20">
+        <tbody style="background-color: rgb(31, 31, 31); border-radius: 20px;">
+            <tr> <h3>Skills</h3></tr>
+            <tr>
+                <td>
+                    <table cellspacing="10">
+                        <thead>
+                            <tr>
+                                <th> Hard Skills </th>
+                                <th> Level </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>C++ low level programming</td>
+                            <td style="color: rgb(168, 98, 60);">★★★✰✰</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <thead cellspacing="10">
+                            <tr>
+                                <th> Soft Skills </th>
+                                <th> Level </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>C++ low level programming</td>
+                            <td style="color: rgb(168, 98, 60);">★★★✰✰</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="contact.html">Contacts</a><br>
+    <button class="collapsible">Self Driving Car ML Demo</button>
+    <div class="content">
+        <link rel="stylesheetcar" href="stylecar.css">
+        <table>
+            <tr>
+                <td><canvas id  ="carCanvas"> </canvas></td>
+                <td><canvas id  ="networkCanvas"></canvas></td>
+            </tr>
+            <tr>
+                <div id="verticalButtons">
+                    <form action="https://armancoding.github.io/SelfDrivingCar/">
+                        <input type="submit" value="Full Version">
+                    </form>
+                    <button onclick="save()">Save</button>
+                    <button onclick="discard()">Delete</button>
+                    <button onclick="savedbrain()">Working Model</button>
+
+            </tr>
+        </table>
+        </div>
+        <script src ="savedBrain.json">     </script>
+        <script src ="visualizer.js">       </script>
+        <script src ="network.js">          </script>
+        <script src ="sensor.js">           </script>
+        <script src ="utils.js">            </script>
+        <script src ="road.js">             </script>
+        <script src ="controls.js">         </script>
+        <script src ="car.js">              </script>
+        <script src ="main.js"></script>
+    </div>
+
+<script>
+let coll = document.getElementsByClassName("collapsible");
+let i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 </body>
 </html>
