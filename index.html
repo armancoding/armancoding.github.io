@@ -12,7 +12,7 @@
     <table cellspacing="20">
         <tr>
             <td>    
-                <img src="mech.jpg" alt="MECHANICAL ENGINEERING" class="avatar" >
+                <img src="pics/mech.jpg" alt="MECHANICAL ENGINEERING" class="avatar" >
             </td>
             <td>
                 <h1>Arman Amirkhanyan</h1>
@@ -119,15 +119,14 @@
             <tr>
                 <td><canvas id  ="carCanvas"> </canvas></td>
                 <td><canvas id  ="networkCanvas"></canvas></td>
-                    <script src ="savedBrain.json">     </script>
-                    <script src ="visualizer.js">       </script>
-                    <script src ="network.js">          </script>
-                    <script src ="sensor.js">           </script>
-                    <script src ="utils.js">            </script>
-                    <script src ="road.js">             </script>
-                    <script src ="controls.js">         </script>
-                    <script src ="car.js">              </script>
-                    <script src ="main.js">             </script>
+                    <script src ="SelfDrivingCar/visualizer.js">       </script>
+                    <script src ="SelfDrivingCar/network.js">          </script>
+                    <script src ="SelfDrivingCar/sensor.js">           </script>
+                    <script src ="SelfDrivingCar/utils.js">            </script>
+                    <script src ="SelfDrivingCar/road.js">             </script>
+                    <script src ="SelfDrivingCar/controls.js">         </script>
+                    <script src ="SelfDrivingCar/car.js">              </script>
+                    <script src ="SelfDrivingCar/main.js">             </script>
                 </tr>
                 <tr>
                     <div id="verticalButtons">
@@ -145,19 +144,6 @@
 
 </div>
 
-<script>
-let coll = document.getElementsByClassName("collapsible");
-for (let i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
+<script src="JSUtils/animations.js"></script>
 </body>
 </html>
