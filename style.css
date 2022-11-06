@@ -37,11 +37,6 @@ hr
     border-style: solid;
 }
 
-table
-{
-    max-height: fit-content;
-    max-width: fit-content;
-}
 
 button{
    border: none;
@@ -133,7 +128,8 @@ textarea:hover
 }
 .stars
 {
-  color:rgb(223, 134, 86)
+  color:rgb(223, 134, 86);
+  text-align: left;
 }
 
 img.avatar
@@ -141,6 +137,11 @@ img.avatar
     height: 200px; 
     width: 200px;
     border-radius: 100px;
+}
+
+tr
+{
+    vertical-align: top;
 }
 
 @media (max-width: 500px) {
