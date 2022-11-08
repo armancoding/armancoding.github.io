@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arman's Portfolio Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pics/favicon.ico">
 </head>
 <body>
-    <div class="center">
-    <table cellspacing="20">
+    <div class="headMenu">
+        <button onclick="showPanel(0)">About Me</button>
+        <button onclick="showPanel(1)">Projects</button>
+        <button onclick="showPanel(2)">GameDev</button>
+        <button onclick="showPanel(3)">Hobbies</button>
+    </div>
+
+    <div class="tabs">
+    <table cellspacing="40">
         <tr>
             <td>    
                 <img src="pics/mech.jpg" alt="MECHANICAL ENGINEERING" class="avatar" >
@@ -23,12 +31,23 @@
     </table>
 
     <hr>
+    <h3>Summary</h3>
+    <p>Determined and widely erudated <i style="color: rgb(223, 134, 86)">Mechanical Engineer</i> 
+        with strong <i style="color: rgb(223, 134, 86)">Software Engineering skills</i>, 
+        specialising in manufacturability, integration and robotics. My software skills make me very 
+        cabale working between software and hardware side of things, bridging gaps between departments.
+        While working for AFC Industries, I have utilized my knowledge, feedback from manufacturing and 
+        fresh open minded approach to improve production processes, decreesing production  cycle time by
+        up to 30%, and saving on production costs via implementing quality control.
+        </p>
     <h3> Education and Interests</h3>
     <ul>
         <li><b>Mechanical Engineer</b>, specializing in <i><b>Manufacturing</b></i> and <i><b>Integration</b></i>
             <ul><li><a href="https://www.citytech.cuny.edu"><i>New York City College of Technology CUM LAUDE (2017-2020)</i></a> </li></ul>
         </li>
-        <li>Enthusiastic Game Developer, believing that game engines are powerful tools, capable of much more than just entertainment</li>
+        <li><b>Enthusiastic Game Developer</b>, believing that game engines are powerful tools, capable of much more than just entertainment</li>
+        <li><b>Software Engineer (self taught)</b>, specializing in low level development, dabbling in robotics and machine learning</li>
+            <ul><li><a href="https://github.com/armancoding"><i>My github</i></a> </li></ul>
     </ul>
     <h3> Work Experience </h3>
     <table cellspacing="10" style="background-color: rgb(31, 31, 31);">
@@ -74,8 +93,8 @@
                             </tr>
                         </thead>
                         <tr>
-                            <td>C++ Low Level Programming</td>
-                            <td class="stars">★★★✰✰</td>
+                            <td>Finite Element Analysis (FEA)</td>
+                            <td class="stars">★★★★★</td>
                         </tr>
                         <tr>
                             <td>Computed Aided Design (CAD)</td>
@@ -86,16 +105,24 @@
                             <td class="stars">★★★★✰</td>
                         </tr>
                         <tr>
-                            <td>Additive Manufacturing (3D Printing)</td>
-                            <td class="stars">★★★★✰</td>
-                        </tr>
-                        <tr>
                             <td>Product Integration</td>
                             <td class="stars">★★★★★</td>
                         </tr>
                         <tr>
-                            <td>Finite Element Analysis (FEA)</td>
+                            <td>Additive Manufacturing (3D Printing)</td>
                             <td class="stars">★★★★★</td>
+                        </tr>
+                        <tr>
+                            <td>C++ Low Level Programming</td>
+                            <td class="stars">★★★✰✰</td>
+                        </tr>
+                        <tr>
+                            <td>Game Development</td>
+                            <td class="stars">★★★✰✰</td>
+                        </tr>
+                        <tr>
+                            <td>Web Development</td>
+                            <td class="stars">★★★✰✰</td>
                         </tr>
                         
                     </table>
@@ -113,8 +140,26 @@
                             <td class="stars">★★★★★</td>
                         </tr>
                         <tr>
-                            <td>Leadership and Management</td>
+                            <td>Training and Mentoring</td>
                             <td class="stars">★★★★★</td>
+                        </tr>
+                        <tr>
+                            <td>Creative</td>
+                            <td class="stars">★★★★★</td>
+                        </tr>
+                        <tr>
+                            <td>Adaptable</td>
+                            <td class="stars">★★★★★</td>
+                        </tr>
+                        <tr>
+                            <td>Multilingual: 
+                                <ul style>
+                                    <li>English  <span class="stars">★★★★★</span></li>
+                                    <li>Russian  <span class="stars">★★★★★</span></li>
+                                    <li>Georgian <span class="stars">★★★★</span></li>
+                                    <li>Armenian <span class="stars">★★</span></li>
+                                </ul></td>
+                            <td class="stars"></td>
                         </tr>
                     </table>
                 </td>
@@ -140,6 +185,12 @@
     <hr>
     <button class="collapsible">Self Driving Car ML Demo</button>
     <div class="content">
+        <h3 style="text-align: center;">Train Me!</h3>
+        <h4>Self Driving Car show of concept neuron network inspired by <a href="https://radufromfinland.com"> RADU FROM FINLAND</a></h3>
+        <p>Click on Full Version to open a separate page for this project. Save button saves the model of the highlighted vehicle.
+            Delete deletes the saved model, Working Model loads one of the iterations i found to be a good starting point for training.
+            Have Fun!
+        </p>
         <table class="center">
             <tr>
                 <td><canvas id  ="carCanvas"> </canvas></td>
@@ -167,6 +218,21 @@
     </div>
 
 
+</div>
+<div class="tabs">
+    <hr>
+    <h3>Projects</h3>
+    <p>This part is still in development, sorry for the inconvenience! Working on fixing it SOON!</p>
+</div>
+<div class="tabs">
+    <hr>
+    <h3>GameDev</h3>
+    <p>This part is still in development, sorry for the inconvenience! Working on fixing it SOON!</p>
+</div>
+<div class="tabs">
+    <hr>
+    <h3>Hobbies</h3>
+    <p>This part is still in development, sorry for the inconvenience! Working on fixing it SOON!</p>
 </div>
 
 <script src="JSUtils/animations.js"></script>

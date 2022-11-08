@@ -121,6 +121,14 @@ textarea:hover
     padding: 2%;
 }
 
+.tabs
+{
+    margin: auto;
+    width: 80%;
+    background-color:rgba(25, 25, 25, 0.95);
+    padding: 2%;
+}
+
 .collapsible
 {
   width: 100%;
@@ -144,7 +152,28 @@ tr
     vertical-align: top;
 }
 
-@media (max-width: 500px) {
+.headMenu
+{
+    margin-left: 8%;
+    position: fixed;
+    height: 50px;
+    width: 84%;
+}
+
+.headMenu button
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 0%;
+    margin: 0%;
+    border-radius: 0%;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 500px) 
+{
     td 
     { 
         float:none; 
@@ -155,4 +184,16 @@ tr
     {
         display:block
     }
+    
+    .headMenu button
+    {
+        width: 100%;
     }
+    .headMenu
+    {
+        margin-left: 80%;
+        position: fixed;
+        height: 50px;
+        width:10%;
+    }
+}
